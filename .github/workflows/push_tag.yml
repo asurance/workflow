@@ -20,11 +20,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Add Tag
-        run: git tag $GITHUB_REF_NAME
+        run: git tag test
         # env:
         #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push Tag
-        run: git push origin -tags
+        run: git push origin --tags
         # env:
         #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
